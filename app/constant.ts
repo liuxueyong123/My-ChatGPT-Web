@@ -93,7 +93,7 @@ export const Google = {
   // /api/openai/v1/chat/completions
 };
 
-export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
+export const DEFAULT_INPUT_TEMPLATE = `尽量用{{lang}}回答我的问题：{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
 You are ChatGPT, a large language model trained by OpenAI.
 Knowledge cutoff: {{cutoff}}
@@ -103,7 +103,7 @@ Latex inline: $x^2$
 Latex block: $$e=mc^2$$
 `;
 
-export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
+export const SUMMARIZE_MODEL = "gpt-4";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2021-09",
